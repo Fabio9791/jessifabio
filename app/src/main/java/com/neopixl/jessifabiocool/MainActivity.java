@@ -16,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
     Button bottomButton;
     @BindView(R.id.imageView)
     ImageView imageView;
+    @BindView(R.id.button_jessi)
+    Button buttonJessi;
+    @BindView(R.id.image_coin)
+    ImageView imageCoin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,5 +32,14 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked() {
 
         imageView.setVisibility(View.VISIBLE);
+
+    }
+
+    @OnClick(R.id.button_jessi)
+    public void onViewClicked2() {
+
+        imageCoin.setVisibility(View.VISIBLE);
+
+
     }
 }
